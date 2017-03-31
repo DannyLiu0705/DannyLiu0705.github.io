@@ -95,7 +95,7 @@ js部分1234567891011$.fn.tab = function(click,tabs)&amp;#123;  return this.each
 <meta property="og:site_name" content="Rio's Notes">
 <meta property="og:description" content="以前一直用bootstrap里面的标签页,后面觉得bootstrap太臃肿了,使用一个小插件浪费资源,就自己用jq写了个小东西,希望不足之处还请指出.(注:请引入jquery)
 js部分1234567891011$.fn.tab = function(click,tabs)&amp;#123;  return this.each(function()&amp;#123;    var tabNav = $(thi">
-<meta property="og:updated_time" content="2017-03-31T08:20:01.276Z">
+<meta property="og:updated_time" content="2017-03-31T09:17:23.069Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jquery Tab页签">
 <meta name="twitter:description" content="以前一直用bootstrap里面的标签页,后面觉得bootstrap太臃肿了,使用一个小插件浪费资源,就自己用jq写了个小东西,希望不足之处还请指出.(注:请引入jquery)
@@ -315,6 +315,12 @@ js部分1234567891011$.fn.tab = function(click,tabs)&amp;#123;  return this.each
           
 
           
+            <span>&nbsp; | &nbsp;
+            <span id="busuanzi_value_page_pv" ></span>次阅读
+            </span>    
+          
+
+          
           
 
           
@@ -337,7 +343,7 @@ js部分1234567891011$.fn.tab = function(click,tabs)&amp;#123;  return this.each
         <p>以前一直用bootstrap里面的标签页,后面觉得bootstrap太臃肿了,使用一个小插件浪费资源,就自己用jq写了个小东西,希望不足之处还请指出.(注:请引入jquery)</p>
 <h2 id="js部分"><a href="#js部分" class="headerlink" title="js部分"></a>js部分</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$.fn.tab = <span class="keyword">function</span>(click,tabs)&#123;</div><div class="line">  <span class="built_in">return</span> this.each(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">    var tabNav = $(this).find(click);</div><div class="line">    var tabCon = $(this).find(tabs);</div><div class="line">    $(this).find(tabNav).click(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">      $(this).addClass(<span class="string">"on"</span>).siblings().removeClass(<span class="string">"on"</span>);</div><div class="line">      $(tabCon).hide().eq($(this).index()).show();</div><div class="line">    &#125;)</div><div class="line">  &#125;)</div><div class="line">&#125;</div><div class="line">$(<span class="string">".tab"</span>).tab(<span class="string">".tabNav a"</span>,<span class="string">".tabCon .tabs"</span>);</div></pre></td></tr></table></figure>
 <h2 id="html部分"><a href="#html部分" class="headerlink" title="html部分"></a>html部分</h2><a id="more"></a>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"tab"</span>&gt;</div><div class="line">  &lt;div class=<span class="string">"tabNav"</span>&gt;</div><div class="line">    &lt;a href=<span class="string">"javascript:;"</span> class=<span class="string">"on"</span>&gt;tab1&lt;/a&gt;</div><div class="line">    &lt;a href=<span class="string">"javascript:;"</span>&gt;tab2&lt;/a&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">  &lt;div class=<span class="string">"tabCon"</span>&gt;</div><div class="line">    &lt;div class=<span class="string">"tabs"</span>&gt;tab1-content&lt;/div&gt;</div><div class="line">	&lt;div class=<span class="string">"tabs hide"</span>&gt;tab2-content&lt;/div&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"tab"</span>&gt;</div><div class="line">  &lt;div class=<span class="string">"tabNav"</span>&gt;</div><div class="line">    &lt;a href=<span class="string">"javascript:;"</span> class=<span class="string">"on"</span>&gt;tab1&lt;/a&gt;</div><div class="line">    &lt;a href=<span class="string">"javascript:;"</span>&gt;tab2&lt;/a&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">  &lt;div class=<span class="string">"tabCon"</span>&gt;</div><div class="line">    &lt;div class=<span class="string">"tabs"</span>&gt;</div><div class="line">      tab1-content</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=<span class="string">"tabs hide"</span>&gt;</div><div class="line">      tab2-content</div><div class="line">    &lt;/div&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
 <p>以上的class “on” 表示tab选中的样式</p>
 
       
@@ -520,6 +526,8 @@ js部分1234567891011$.fn.tab = function(click,tabs)&amp;#123;  return this.each
   </a>
 </div>
 
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
         
 
