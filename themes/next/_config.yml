@@ -39,11 +39,11 @@ seo: false
 menu:
   home: /
   #categories: /categories
-  #about: /about
+  about: /about
   archives: /archives
   tags: /tags
   #sitemap: /sitemap.xml
-  #commonweal: /404.html
+  # commonweal: /404.html
 
 
 # Enable/Disable menu icons.
@@ -71,9 +71,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -154,7 +154,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /uploads/avatar.jpg
 
 
 # Table Of Contents in the Sidebar
