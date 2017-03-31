@@ -31,8 +31,12 @@ $(".tab").tab(".tabNav a",".tabCon .tabs");
     <a href="javascript:;">tab2</a>
   </div>
   <div class="tabCon">
-    <div class="tabs">tab1-content</div>
-	<div class="tabs hide">tab2-content</div>
+    <div class="tabs">
+      tab1-content
+    </div>
+    <div class="tabs hide">
+      tab2-content
+    </div>
   </div>
 </div>
 ```
