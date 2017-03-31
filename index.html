@@ -378,133 +378,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/31/React/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Danny">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Danny's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/31/React/" itemprop="url">
-                  Jquery Tab页签
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-31T14:31:13+08:00">
-                2017-03-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>以前一直用bootstrap里面的标签页,后面觉得bootstrap太臃肿了,使用一个小插件浪费资源,就自己用jq写了个小东西,希望不足之处还请指出.(注:请引入jquery)</p>
-<h2 id="js部分"><a href="#js部分" class="headerlink" title="js部分"></a>js部分</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$.fn.tab = <span class="keyword">function</span>(click,tabs)&#123;</div><div class="line">  <span class="built_in">return</span> this.each(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">    var tabNav = $(this).find(click);</div><div class="line">    var tabCon = $(this).find(tabs);</div><div class="line">    $(this).find(tabNav).click(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">      $(this).addClass(<span class="string">"on"</span>).siblings().removeClass(<span class="string">"on"</span>);</div><div class="line">      $(tabCon).hide().eq($(this).index()).show();</div><div class="line">    &#125;)</div><div class="line">  &#125;)</div><div class="line">&#125;</div><div class="line">$(<span class="string">".tab"</span>).tab(<span class="string">".tabNav a"</span>,<span class="string">".tabCon .tabs"</span>);</div></pre></td></tr></table></figure>
-<h2 id="html部分"><a href="#html部分" class="headerlink" title="html部分"></a>html部分</h2>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/31/React/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -550,7 +423,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
