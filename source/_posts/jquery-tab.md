@@ -3,7 +3,7 @@ title: Jquery Tab页签
 date: 2017-03-31 14:31:13
 tags:
 ---
-以前一直用bootstrap里面的标签页,后面觉得bootstrap太臃肿了,使用一个小插件浪费资源,就自己用jq写了个小东西,希望不足之处还请指出.(注:请引入jquery)
+以前一直用bootstrap里面的标签页,后面觉得bootstrap太臃肿了,使用一个小插件浪费资源,就自己用jq写了个小东西,希望不足之处还请指出.(注:请引入jquery.js)
 
 ## js部分
 
